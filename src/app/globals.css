@@ -1,0 +1,235 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* #FFFFFF */
+    --foreground: 222 47% 11%; /* #0F172A - Dark Slate Blue */
+
+    --muted: 220 60% 97%; /* #F0F5FA - Very Light Blue */
+    --muted-foreground: 220 15% 45%; /* #64748B - Slate Gray */
+
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 222 47% 11%; /* #0F172A */
+
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 222 47% 11%; /* #0F172A */
+
+    --border: 217 91% 88%; /* #BDDDFD - Light Sky Blue Border */
+    --input: 217 91% 92%; /* #D6E9FE - Lighter Sky Blue Input */
+
+    --primary: 217 91% 60%; /* #3B82F6 - Standard Blue */
+    --primary-foreground: 0 0% 100%; /* White for text on primary */
+
+    --secondary: 217 91% 95%; /* #EBF4FF - Very Light Blue (Secondary Background) */
+    --secondary-foreground: 217 91% 45%; /* #2563EB - Medium Blue (Text on Secondary) */
+
+    --accent: 217 91% 70%; /* #79B6F9 - Lighter Accent Blue */
+    --accent-foreground: 217 91% 25%; /* #1D4ED8 - Darker Blue for text on accent */
+
+    /* Destructive/Warning/Info colors - using blues and grays */
+    --destructive: 220 15% 55%; /* Slate Gray (adjusted for more contrast) */
+    --destructive-foreground: 0 0% 100%; 
+
+    --warning: 217 70% 70%; /* Lighter info blue for warnings */
+    --warning-foreground: 217 91% 25%; /* Darker Blue for text on warning */
+
+    --info: 217 70% 60%; /* A softer blue for informational messages */
+    --info-foreground: 0 0% 100%;
+    
+    /* Success - Classic Green */
+    --success: 145 63% 42%; /* #22C55E - Vibrant Green */
+    --success-foreground: 0 0% 100%; /* White text on green */
+
+
+    --ring: 217 91% 60%; /* #3B82F6 - Standard Blue */
+    --radius: 0.5rem;
+
+    /* Chart colors - keeping blues */
+    --chart-1: 217 91% 60%; /* Primary Blue */
+    --chart-2: 217 80% 70%; /* Lighter Blue */
+    --chart-3: 217 70% 50%; /* Darker Blue */
+    --chart-4: 217 60% 80%; /* Very Light Blue */
+    --chart-5: 217 50% 40%; /* Deep Blue */
+
+    /* Sidebar variables aligned with main theme */
+    --sidebar-background: var(--background);
+    --sidebar-foreground: var(--foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--accent);
+    --sidebar-accent-foreground: var(--accent-foreground);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
+  }
+
+  .dark {
+    --background: 222 47% 11%; /* #0F172A - Dark Slate Blue */
+    --foreground: 210 40% 98%; /* #FAFAFA - Off White */
+
+    --muted: 222 40% 20%; /* #26324A - Darker Muted Blue */
+    --muted-foreground: 215 25% 70%; /* #A0AEC0 - Light Slate Gray */
+
+    --popover: 222 47% 11%; /* #0F172A */
+    --popover-foreground: 210 40% 98%; /* #FAFAFA */
+
+    --card: 222 47% 15%; /* #1E293B - Darker Card Blue */
+    --card-foreground: 210 40% 98%; /* #FAFAFA */
+
+    --border: 217 33% 35%; /* #4A5E8A - Darker Muted Blue Border */
+    --input: 217 33% 30%; /* #3A4C7A - Even Darker Input Blue */
+
+    --primary: 217 91% 65%; /* #5D9CEC - Brighter Blue for dark mode */
+    --primary-foreground: 222 47% 11%; /* Dark text on primary for contrast */
+
+    --secondary: 217 33% 25%; /* #303F60 - Dark Secondary Background */
+    --secondary-foreground: 210 40% 90%; /* #E2E8F0 - Lighter text on secondary */
+
+    --accent: 217 91% 70%; /* #79B6F9 - Lighter Accent Blue */
+    --accent-foreground: 222 47% 11%; /* Dark text on accent */
+
+    /* Destructive/Warning/Info colors aligned with blue theme for dark mode */
+    --destructive: 215 25% 60%; /* Adjusted Light Slate Gray for dark mode "destructive" */
+    --destructive-foreground: 222 47% 11%; 
+
+    --warning: 217 60% 70%; /* Softer blue (info) for warnings in dark */
+    --warning-foreground: 222 47% 11%;
+
+    --info: 217 60% 65%; /* A softer blue for informational messages in dark */
+    --info-foreground: 222 47% 11%;
+
+    /* Success - Classic Green for dark mode */
+    --success: 145 63% 42%; /* #22C55E - Vibrant Green (same as light) */
+    --success-foreground: 0 0% 100%; /* White text on green */
+
+    --ring: 217 91% 65%; /* #5D9CEC */
+
+    --chart-1: 217 91% 65%;
+    --chart-2: 217 80% 75%;
+    --chart-3: 217 70% 55%;
+    --chart-4: 217 60% 85%;
+    --chart-5: 217 50% 45%;
+    
+    /* Sidebar variables aligned with main theme for dark mode */
+    --sidebar-background: var(--background);
+    --sidebar-foreground: var(--foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--accent);
+    --sidebar-accent-foreground: var(--accent-foreground);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+
+:root {
+  --primary-blue: #1E3A8A; /* Main brand color from your logo */
+  --secondary-purple: #7C3AED; /* Softer purple for hover and secondary elements */
+  --accent-teal: #2DD4BF; /* Vibrant teal for banners and buttons */
+  --highlight-gold: #F59E0B; /* Warm gold for discounts and CTAs */
+  --bg-dark: #0F172A; /* Darkest background for main sections */
+  --bg-medium: #1E293B; /* Medium gray for cards and secondary sections */
+  --bg-light: #334155; /* Lighter gray for subtle contrasts */
+  --text-light: #F1F5F9; /* Softer white for readable text */
+  --gradient-dark: linear-gradient(135deg, #0F172A, #1E293B); /* Subtle gradient for sections */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-[--bg-dark] text-[--text-light];
+}
+
+/* Animations */
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Section Divider */
+.section-divider {
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent, #5593f7, transparent) 1;
+}
+
+/* Background Pattern */
+.pattern-bg {
+  background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[--bg-medium];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[--primary-blue] rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-[--secondary-purple];
+}
