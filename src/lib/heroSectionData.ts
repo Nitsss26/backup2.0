@@ -1,34 +1,77 @@
 
 export const heroSectionData = {
     carouselItems: [
+      // {
+      //   id: '1',
+      //   imageUrl: '/unb.png',
+      //   title: 'Master IIT-JEE Advanced',
+      //   description: 'Ace your IIT-JEE with our comprehensive course!',
+      //   ctaText: 'Enroll Now',
+      //   ctaLink: '/courses/featured-iitjee-01',
+      //   dataAiHint: "iitjee online course",
+      // },
+      // {
+      //   id: '2',
+      //   imageUrl: '/geek.png',
+      //   title: 'NEET Biology Bootcamp',
+      //   description: 'Unlock your potential with this in-depth course!',
+      //   ctaText: 'Enroll Now',
+      //   ctaLink: '/courses/featured-neet-01',
+      //   dataAiHint: "neet medical course",
+      // },
+      // {
+      //   id: '3',
+      //   imageUrl: '/pb.png',
+      //   title: 'NEET Biology Bootcamp',
+      //   description: 'Unlock your potential with this in-depth course!',
+      //   ctaText: 'Enroll Now',
+      //   ctaLink: '/courses/featured-neet-01',
+      //   dataAiHint: "neet medical course",
+      // },
       {
         id: '1',
-        imageUrl: '/unb.png',
+        imageUrl: '/un.png', // Desktop image
+        mobileImageUrl: '/unb.png', // Mobile image
         title: 'Master IIT-JEE Advanced',
         description: 'Ace your IIT-JEE with our comprehensive course!',
         ctaText: 'Enroll Now',
         ctaLink: '/courses/featured-iitjee-01',
         dataAiHint: "iitjee online course",
       },
-      {
-        id: '2',
-        imageUrl: '/geek.png',
-        title: 'NEET Biology Bootcamp',
-        description: 'Unlock your potential with this in-depth course!',
-        ctaText: 'Enroll Now',
-        ctaLink: '/courses/featured-neet-01',
-        dataAiHint: "neet medical course",
-      },
+    
       {
         id: '3',
-        imageUrl: '/pb.png',
+        imageUrl: '/pppp.png', // Desktop image
+        mobileImageUrl: '/pb.png', // Mobile image
         title: 'NEET Biology Bootcamp',
         description: 'Unlock your potential with this in-depth course!',
         ctaText: 'Enroll Now',
         ctaLink: '/courses/featured-neet-01',
         dataAiHint: "neet medical course",
       },
-    ],
+      {
+        id: '2',
+        imageUrl: 'https://sttc.gamersgate.com/images/banner/1800x400-6998b7-2.jpg?format=auto&width=1800', // Desktop image
+        mobileImageUrl: 'https://sttc.gamersgate.com/images/banner/575x300-2_NIqCEHP.jpg?format=auto&width=575', // Mobile image
+        title: 'NEET Biology Bootcamp',
+        description: 'Unlock your potential with this in-depth course!',
+        ctaText: 'Enroll Now',
+        ctaLink: '/courses/featured-neet-01',
+        dataAiHint: "neet medical course",
+      },
+      {
+        id: '4',
+        imageUrl: 'https://sttc.gamersgate.com/images/banner/1800x400-162339.jpg?format=auto&width=1800', // Desktop image
+        mobileImageUrl: 'https://sttc.gamersgate.com/images/banner/575x300-2_NIqCEHP.jpg?format=auto&width=575', // Mobile image
+        title: 'NEET Biology Bootcamp',
+        description: 'Unlock your potential with this in-depth course!',
+        ctaText: 'Enroll Now',
+        ctaLink: '/courses/featured-neet-01',
+        dataAiHint: "neet medical course",
+      },
+    ]
+    
+    ,
     rightBanner: {
       imageUrl: 'https://i.postimg.cc/nhsP0CSS/Screenshot-2025-06-14-144740.png',
       // title: 'UPSC CSE Prep',
@@ -55,13 +98,26 @@ export const heroSectionData = {
       dataAiHint: "",
     },
     bottomBanners: [
-      {
-        imageUrl: 'https://i.postimg.cc/sDs7DqRV/Screenshot-2025-06-14-142944-1.png',
-        // title: 'Tech Courses',
-        // ctaText: 'Explore',
-        // ctaLink: '/courses?category=computer-science',
+  
+    {
+        imageUrl: 'https://i.postimg.cc/jjMn2StK/Screenshot-2025-06-14-145131.png',
+        // title: 'Udemy',
+        // ctaText: 'Browse',
+        // ctaLink: '/courses?platform=udemy',
+        // bgColor: 'bg-[--primary-blue]',
+        // dataAiHint: "udemy online learning",
+        title: '',
+        ctaText: '',
+        ctaLink: '',
+        bgColor: '',
+        dataAiHint: "",
+      },     {
+        imageUrl: '/kkk.png',
+        // title: 'Coursera',
+        // ctaText: 'Browse',
+        // ctaLink: '/courses?platform=coursera',
         // bgColor: 'bg-[--accent-teal]',
-        // dataAiHint: "tech course computer",
+        // dataAiHint: "coursera online platform",
         title: '',
         ctaText: '',
         ctaLink: '',
@@ -81,26 +137,14 @@ export const heroSectionData = {
         bgColor: '',
         dataAiHint: "",
       },
-      {
-        imageUrl: 'https://i.postimg.cc/jjMn2StK/Screenshot-2025-06-14-145131.png',
-        // title: 'Udemy',
-        // ctaText: 'Browse',
-        // ctaLink: '/courses?platform=udemy',
-        // bgColor: 'bg-[--primary-blue]',
-        // dataAiHint: "udemy online learning",
-        title: '',
-        ctaText: '',
-        ctaLink: '',
-        bgColor: '',
-        dataAiHint: "",
-      },
-      {
-        imageUrl: 'https://i.postimg.cc/05YKFsB8/Screenshot-2025-06-14-145642.png',
-        // title: 'Coursera',
-        // ctaText: 'Browse',
-        // ctaLink: '/courses?platform=coursera',
+     
+     {
+        imageUrl: '/kk.png',
+        // title: 'Tech Courses',
+        // ctaText: 'Explore',
+        // ctaLink: '/courses?category=computer-science',
         // bgColor: 'bg-[--accent-teal]',
-        // dataAiHint: "coursera online platform",
+        // dataAiHint: "tech course computer",
         title: '',
         ctaText: '',
         ctaLink: '',

@@ -14,6 +14,12 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'sttc.gamersgate.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'logowik.com',
         port: '',
         pathname: '/**',
