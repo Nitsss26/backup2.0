@@ -487,7 +487,7 @@ export const topCategoryShowcaseData = [
         price: 5000,
         originalPrice: 7500,
         category: "IIT-JEE",
-        imageUrl: 'https://www.vedantu.store/cdn/shop/files/MOCK_UP_FILE_FOR_1.png?v=1745297444&width=750',
+        imageUrl: '/v.png',
         dataAiHint: "IIT-JEE maths problems",
         shortDescription: 'Master JEE Maths with this intensive course focusing on Algebra, Calculus, and Geometry.',
         duration: '100 hours total',

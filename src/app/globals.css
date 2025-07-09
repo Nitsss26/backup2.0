@@ -151,6 +151,16 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
+.dot-pattern {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.3) 2px, transparent 2px);
+  background-size: 10px 10px; /* Reduced from 20px to 10px for more dots */
+  background-position: 0 0, 5px 5px; /* Adjusted to half the background-size for alignment */
+}
+
+.gradient-background {
+  background: linear-gradient(to right, #15243e 0%, #15243e 100%);
+}
+
 .hover-scale {
   transition: transform 0.3s ease;
 }

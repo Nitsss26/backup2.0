@@ -67,7 +67,7 @@ export function Carousel({ items }: CarouselProps) {
                   alt={item.title}
                   width={1200}
                   height={150}
-                  className="w-full h-[150px] object-cover block md:hidden"
+                  className="w-full h-[160px] object-cover block md:hidden"
                   priority={index === 0}
                   data-ai-hint="course promotion banner mobile"
                 />

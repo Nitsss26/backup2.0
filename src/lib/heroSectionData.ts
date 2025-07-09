@@ -30,8 +30,9 @@ export const heroSectionData = {
       // },
       {
         id: '1',
-        imageUrl: '/un.png', // Desktop image
-        mobileImageUrl: '/unb.png', // Mobile image
+        //imageUrl: '/un.png', // Desktop image
+        imageUrl: '/ppp.jpg', // Desktop image
+        mobileImageUrl: '/pf.png', // Mobile image
         title: 'Master IIT-JEE Advanced',
         description: 'Ace your IIT-JEE with our comprehensive course!',
         ctaText: 'Enroll Now',
@@ -42,7 +43,7 @@ export const heroSectionData = {
       {
         id: '3',
         imageUrl: '/pppp.png', // Desktop image
-        mobileImageUrl: '/pb.png', // Mobile image
+        mobileImageUrl: 'https://sttc.gamersgate.com/images/banner/575x300-2_NIqCEHP.jpg?format=auto&width=575', // Mobile image
         title: 'NEET Biology Bootcamp',
         description: 'Unlock your potential with this in-depth course!',
         ctaText: 'Enroll Now',
@@ -52,7 +53,7 @@ export const heroSectionData = {
       {
         id: '2',
         imageUrl: 'https://sttc.gamersgate.com/images/banner/1800x400-6998b7-2.jpg?format=auto&width=1800', // Desktop image
-        mobileImageUrl: 'https://sttc.gamersgate.com/images/banner/575x300-2_NIqCEHP.jpg?format=auto&width=575', // Mobile image
+        mobileImageUrl: '/unb.png', // Mobile image
         title: 'NEET Biology Bootcamp',
         description: 'Unlock your potential with this in-depth course!',
         ctaText: 'Enroll Now',
@@ -62,7 +63,7 @@ export const heroSectionData = {
       {
         id: '4',
         imageUrl: 'https://sttc.gamersgate.com/images/banner/1800x400-162339.jpg?format=auto&width=1800', // Desktop image
-        mobileImageUrl: 'https://sttc.gamersgate.com/images/banner/575x300-2_NIqCEHP.jpg?format=auto&width=575', // Mobile image
+        mobileImageUrl: 'https://sttc.gamersgate.com/images/banner/575x300_K3eVRRx.jpg?format=auto&width=575', // Mobile image
         title: 'NEET Biology Bootcamp',
         description: 'Unlock your potential with this in-depth course!',
         ctaText: 'Enroll Now',
@@ -112,7 +113,7 @@ export const heroSectionData = {
         bgColor: '',
         dataAiHint: "",
       },     {
-        imageUrl: '/kkk.png',
+        imageUrl: 'https://i.postimg.cc/m2kMHMhq/Screenshot-2025-06-14-143916-1.png',
         // title: 'Coursera',
         // ctaText: 'Browse',
         // ctaLink: '/courses?platform=coursera',
@@ -125,7 +126,7 @@ export const heroSectionData = {
         dataAiHint: "",
       },
       {
-        imageUrl: 'https://i.postimg.cc/m2kMHMhq/Screenshot-2025-06-14-143916-1.png',
+        imageUrl: '/kkk.png',
         // title: 'Business Courses',
         // ctaText: 'Explore',
         // ctaLink: '/courses?category=business',

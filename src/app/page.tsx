@@ -223,10 +223,10 @@ export default function HomePage() {
       </div>
       
       {/* Mobile Horizontal Scroll */}
-      <div className="md:hidden px-2">
+      {/* <div className="md:hidden px-2">
         <div className="flex gap-2 overflow-x-scroll pb-4" style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
           {heroSectionData.bottomBanners.map((banner, index) => (
-            <div key={index} className="flex-shrink-0 w-48">
+            <div key={index} className="flex-shrink-0 w-64">
               <BannerCard
                 imageUrl={banner.imageUrl}
                 title={banner.title}
@@ -238,7 +238,24 @@ export default function HomePage() {
             </div>
           ))}
         </div>
+      </div> */}
+      <div className="md:hidden px-2">
+  <div className="flex gap-2 overflow-x-scroll pb-4" style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
+    {heroSectionData.bottomBanners.map((banner, index) => (
+      <div key={index} className="flex-shrink-0 w-64">
+        <BannerCard
+          imageUrl={banner.imageUrl}
+          title={banner.title}
+          ctaText={banner.ctaText}
+          ctaLink={banner.ctaLink}
+          bgColor={banner.bgColor}
+          dataAiHint={banner.dataAiHint}
+          isMobile={true} // Added isMobile prop
+        />
       </div>
+    ))}
+  </div>
+</div>
     </div>
   </div>
 </section>
@@ -256,7 +273,7 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      Recommended For You
+      Recommended Courses
     </motion.h2>
     
     {/* Desktop Grid - unchanged */}
@@ -302,8 +319,7 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-<Video2/>
-<Video/>
+
 <section className="py-12 px-6 bg-primary/10 section-divider">
   <div className="container">
     <motion.h2
@@ -311,7 +327,7 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      Explore By Platforms
+      Explore By Edtech Platforms
     </motion.h2>
     
     {/* Desktop Version - Original with arrows and dots */}
@@ -446,6 +462,8 @@ export default function HomePage() {
   </div>
 </section>
 
+
+
         {/* Best Selling Courses */}
 <section className="py-12 px-6 bg-[--bg-dark] section-divider">
   <div className="container">
@@ -518,6 +536,8 @@ export default function HomePage() {
     </div>
   </div>
 </section>
+<Video2/>
+
 
       {/* Get Extra Discounts */}
 <section className="py-12 px-6 bg-gradient-to-r from-[--primary-blue] to-[#5593f7] section-divider">
@@ -556,6 +576,8 @@ export default function HomePage() {
     </motion.div>
   </div>
 </section>
+
+
 
         {/* Best Selling Course Bundles */}
 <section className="py-12 px-6 bg-primary/10 section-divider">
@@ -745,6 +767,8 @@ export default function HomePage() {
     </div>
   </div>
 </section>
+
+<Video/>
 
 <section className="py-12 px-6 bg-[--bg-dark] section-divider">
   <div className="container">
